@@ -20,3 +20,29 @@ body {
   font-family: var(--font-sans);
   -webkit-font-smoothing: antialiased;
 }
+
+/* Keep the Botpress launcher and panel clear of mobile screen edges. */
+.bpFabWrapper {
+  right: 24px !important;
+  bottom: 24px !important;
+}
+
+.bpWebchat {
+  right: 24px !important;
+  bottom: 96px !important;
+}
+
+@media (max-width: 480px) {
+  .bpFabWrapper {
+    right: 24px !important;
+    bottom: 24px !important;
+  }
+
+  .bpWebchat {
+    right: 16px !important;
+    bottom: 88px !important;
+    width: calc(100vw - 32px) !important;
+    max-width: 400px !important;
+    max-height: calc(100dvh - 112px) !important;
+  }
+}

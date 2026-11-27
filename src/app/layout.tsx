@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Plus_Jakarta_Sans } from "next/font/google";
+import { BotpressWebchat } from "@/components/BotpressWebchat";
 import "./globals.css";
 
 const plusJakarta = Plus_Jakarta_Sans({
@@ -21,7 +22,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={plusJakarta.variable}>
-      <body className="min-h-screen bg-white text-slate-900 antialiased">{children}</body>
+      <body className="min-h-screen bg-white text-slate-900 antialiased">
+        {children}
+        <BotpressWebchat />
+      </body>
     </html>
   );
 }
