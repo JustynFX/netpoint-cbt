@@ -108,9 +108,9 @@ export function JambChecklist({ onOpenEnquiry }: JambChecklistProps) {
           )}
         </div>
 
-        <div className="mt-10 grid gap-8 lg:grid-cols-12">
+        <div className="mt-10 grid min-w-0 grid-cols-1 gap-8 lg:grid-cols-12">
           {/* Interactive Checklist */}
-          <div className="rounded-2xl border border-slate-200 bg-slate-50/70 p-5 sm:p-7 lg:col-span-7">
+          <div className="min-w-0 rounded-2xl border border-slate-200 bg-slate-50/70 p-5 sm:p-7 lg:col-span-7">
             <div className="flex items-center justify-between gap-4">
               <span className="text-sm font-bold text-slate-900">
                 Readiness Progress ({checkedIds.length} of {checklistItems.length} ready)
@@ -147,7 +147,7 @@ export function JambChecklist({ onOpenEnquiry }: JambChecklistProps) {
                           <Square className="h-5 w-5 text-slate-400" aria-hidden="true" />
                         )}
                       </span>
-                      <div>
+                      <div className="min-w-0">
                         <span
                           className={`block text-sm font-bold sm:text-base ${
                             isChecked ? "text-emerald-950 line-through decoration-emerald-500/60" : "text-slate-900"
@@ -167,7 +167,7 @@ export function JambChecklist({ onOpenEnquiry }: JambChecklistProps) {
           </div>
 
           {/* Right Column: Passport Rules & Issue Help */}
-          <div className="flex flex-col gap-6 lg:col-span-5">
+          <div className="flex min-w-0 flex-col gap-6 lg:col-span-5">
             <div className="rounded-2xl border border-slate-200 bg-slate-900 p-6 text-white shadow-sm sm:p-7">
               <div className="flex items-center gap-3">
                 <span className="flex h-10 w-10 items-center justify-center rounded-xl bg-emerald-500/20 text-emerald-400">

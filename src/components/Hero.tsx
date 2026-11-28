@@ -20,9 +20,9 @@ export function Hero({ onOpenEnquiry }: HeroProps) {
         aria-hidden="true"
       />
 
-      <div className="relative mx-auto grid max-w-7xl items-center gap-10 px-4 py-12 sm:px-6 sm:py-16 lg:grid-cols-12 lg:gap-12 lg:px-8 lg:py-20">
+      <div className="relative mx-auto grid w-full min-w-0 grid-cols-1 max-w-7xl items-center gap-10 px-4 py-12 sm:px-6 sm:py-16 lg:grid-cols-12 lg:gap-12 lg:px-8 lg:py-20">
         {/* Left Copy */}
-        <div className="lg:col-span-6">
+        <div className="min-w-0 lg:col-span-6">
           <div className="inline-flex items-center gap-2 rounded-full border border-emerald-500/30 bg-emerald-500/10 px-3.5 py-1.5 text-xs font-semibold tracking-wide text-emerald-300">
             <MapPin className="h-3.5 w-3.5" aria-hidden="true" />
             Ugbowo, near UNIBEN Main Gate &bull; Benin City
@@ -75,11 +75,11 @@ export function Hero({ onOpenEnquiry }: HeroProps) {
         </div>
 
         {/* Right Image */}
-        <div className="lg:col-span-6">
+        <div className="min-w-0 lg:col-span-6">
           <div className="relative overflow-hidden rounded-2xl border border-slate-700/80 bg-slate-800 shadow-2xl">
             <Image
               src="/images/hero-cbt.png"
-              alt="NetPoint CBT workstation and digital services centre in Ugbowo, Benin City"
+              alt="AI-generated wide interior concept image of a Nigerian cyber café, showing students at rows of CBT workstations."
               width={1200}
               height={800}
               priority
@@ -92,6 +92,10 @@ export function Hero({ onOpenEnquiry }: HeroProps) {
                 Walk-ins &amp; Pre-booked Slots
               </span>
             </div>
+            <p className="bg-slate-900 px-4 pb-3 text-[11px] leading-relaxed text-slate-400 sm:px-5">
+              AI-generated concept preview; this is not a photograph of NetPoint&apos;s actual
+              premises or customers.
+            </p>
           </div>
         </div>
       </div>

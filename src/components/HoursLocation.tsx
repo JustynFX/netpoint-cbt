@@ -23,7 +23,7 @@ export function HoursLocation({ onOpenEnquiry }: HoursLocationProps) {
           </p>
         </div>
 
-        <div className="mt-10 grid gap-6 lg:grid-cols-2">
+        <div className="mt-10 grid min-w-0 grid-cols-1 gap-6 lg:grid-cols-2">
           {/* Operating Hours Card */}
           <div className="flex flex-col justify-between rounded-2xl border border-slate-200 bg-white p-6 shadow-sm sm:p-8">
             <div>

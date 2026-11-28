@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Navbar } from "@/components/Navbar";
 import { Hero } from "@/components/Hero";
 import { Services } from "@/components/Services";
@@ -15,6 +15,11 @@ export function HomeShell() {
   const [selectedService, setSelectedService] = useState<ServiceCategory>(
     SERVICE_CATEGORIES[0]
   );
+
+  useEffect(() => {
+    document.body.classList.toggle("enquiry-modal-open", modalOpen);
+    return () => document.body.classList.remove("enquiry-modal-open");
+  }, [modalOpen]);
 
   const openEnquiry = (service?: ServiceCategory) => {
     if (service) {

@@ -23,7 +23,8 @@ const services: ServiceItem[] = [
     title: "JAMB, Post-UTME & Exam Registration",
     badge: "Exam Support",
     image: "/images/service-jamb.png",
-    imageAlt: "JAMB UTME, Direct Entry, and Post-UTME registration support",
+    imageAlt:
+      "AI-generated concept image of a Nigerian cyber café staff member helping a student at a registration desk with a biometric scanner nearby.",
     description:
       "Smooth registration assistance for UTME, Direct Entry, WAEC/NECO GCE, and UNIBEN Post-UTME screening & clearance.",
     highlights: [
@@ -37,7 +38,8 @@ const services: ServiceItem[] = [
     title: "High-Speed Printing, Photocopy & Binding",
     badge: "Print & Bind",
     image: "/images/service-print.png",
-    imageAlt: "High-speed laser printing, photocopying, and project binding",
+    imageAlt:
+      "AI-generated concept image of a Nigerian customer collecting a bound project from a staff member at a print counter, with printers and binding supplies visible.",
     description:
       "Crisp black-and-white or colour prints for lecture notes, SIWES reports, and final-year UNIBEN research projects.",
     highlights: [
@@ -51,7 +53,8 @@ const services: ServiceItem[] = [
     title: "Document Typing & Online Applications",
     badge: "Digital Desk",
     image: "/images/service-typing.png",
-    imageAlt: "Professional document typing and online portal applications",
+    imageAlt:
+      "AI-generated concept image of a Nigerian cyber café staff member helping a student use a computer, with other workstations in the background.",
     description:
       "Clean, error-free document formatting and guided submissions for university, scholarship, and NYSC portals.",
     highlights: [
@@ -69,22 +72,22 @@ export function Services({ onSelectService }: ServicesProps) {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="max-w-2xl">
           <p className="text-xs font-bold uppercase tracking-wider text-emerald-600">
-            Our Core Services
+            Services at Our Ugbowo Centre
           </p>
           <h2 className="mt-2 text-2xl font-extrabold tracking-tight text-slate-900 sm:text-3xl">
-            Everything Students &amp; Applicants Need Under One Roof
+            Registration, Printing &amp; Digital Support Near UNIBEN
           </h2>
           <p className="mt-3 text-base text-slate-600">
-            Whether you are preparing for UTME, submitting a final-year project, or completing
-            an urgent online portal application, book ahead or enquire first so you save time.
+            Explore our CBT workstations, registration support, and print services in one place.
+            These AI-generated images are concept previews, not photographs of the actual centre.
           </p>
         </div>
 
-        <div className="mt-10 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+        <div className="mt-10 grid min-w-0 grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
           {services.map((service) => (
             <article
               key={service.title}
-              className="flex flex-col overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm transition-shadow hover:shadow-md"
+              className="flex min-w-0 flex-col overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm transition-shadow hover:shadow-md"
             >
               <div className="relative aspect-[10/7] w-full overflow-hidden bg-slate-100">
                 <Image
@@ -98,6 +101,9 @@ export function Services({ onSelectService }: ServicesProps) {
                   {service.badge}
                 </span>
               </div>
+              <p className="border-b border-slate-100 bg-slate-50 px-5 py-2.5 text-[11px] leading-relaxed text-slate-500">
+                AI-generated concept preview; not a photo of NetPoint&apos;s premises or customers.
+              </p>
 
               <div className="flex flex-1 flex-col p-6">
                 <h3 className="text-lg font-bold text-slate-900">{service.title}</h3>

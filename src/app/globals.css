@@ -32,6 +32,12 @@ body {
   bottom: 96px !important;
 }
 
+/* Keep the chat controls out of the way while the full-screen enquiry form is open. */
+.enquiry-modal-open .bpFabWrapper,
+.enquiry-modal-open .bpWebchat {
+  display: none !important;
+}
+
 @media (max-width: 480px) {
   .bpFabWrapper {
     right: 24px !important;

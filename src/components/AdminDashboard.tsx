@@ -476,7 +476,7 @@ export function AdminDashboard({ initialAuthenticated }: AdminDashboardProps) {
                     <p className="text-xs font-semibold text-emerald-700">{row.service}</p>
                     <p className="text-xs leading-relaxed text-slate-700">{row.message}</p>
                     <div className="flex flex-wrap gap-x-4 gap-y-1 pt-1 text-[11px] text-slate-500">
-                      <span>{row.email}</span>
+                      <span className="break-all">{row.email}</span>
                       <span>{row.phone}</span>
                     </div>
                   </article>
